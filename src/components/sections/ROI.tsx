@@ -1,6 +1,6 @@
 import { TrendingUp, IndianRupee, Calendar, BarChart3, ShoppingBag, Plane, Pill } from "lucide-react";
 import storefront from "@/assets/storefront.jpg";
-import coatStetho from "@/assets/illu-coat-stethoscope.jpg";
+import coatStetho from "@/assets/illu-coat-stethoscope1.jpg";
 import Reveal from "@/components/Reveal";
 
 const stats = [
