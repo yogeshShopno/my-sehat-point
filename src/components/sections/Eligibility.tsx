@@ -58,7 +58,7 @@ const Eligibility = () => {
           <Reveal animation="fade-in-left">
             <div className="h-full bg-card-grad rounded-3xl p-7 md:p-8 border border-border shadow-soft">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-11 h-11 rounded-xl bg-gradient-brand flex items-center justify-center shadow-soft">
+                <div className="w-11 h-11 rounded-xl bg-[#1daf83] flex items-center justify-center shadow-soft">
                   <ClipboardCheck className="w-5 h-5 text-primary-foreground" />
                 </div>
                 <h3 className="font-display font-bold text-2xl text-primary">Eligibility Criteria</h3>

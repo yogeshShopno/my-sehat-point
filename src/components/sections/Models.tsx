@@ -101,42 +101,40 @@ const Models = () => {
       <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-secondary/5 blur-3xl rounded-full" />
       <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-primary/5 blur-3xl rounded-full" />
 
-      <div className="container relative">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         <Reveal className="text-center max-w-2xl mx-auto mb-14">
           <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold tracking-wider uppercase mb-4">
             Choose Your Model
           </span>
           <h2 className="font-display font-extrabold text-3xl md:text-5xl text-primary leading-tight">
-            Three models. <span className="text-gradient">Zero royalty.</span>
+            Three Models - <span className="text-gradient">Zero Royalty</span>
             <br />
-            100% profit yours.
+            100% Profit Yours.
           </h2>
           <p className="mt-5 text-muted-foreground text-lg">
             Pick the franchise model that fits your investment, location and growth ambition.
           </p>
         </Reveal>
 
-        <div className="grid lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
           {models.map((m, i) => (
             <Reveal key={i} animation="scale-in" delay={i * 0.1}>
               <div
-                className={`relative h-full rounded-3xl p-8 transition-spring hover:-translate-y-2 ${
-                  m.highlight
+                className={`relative h-full rounded-3xl p-8 transition-spring hover:-translate-y-2 ${m.highlight
                     ? "bg-hero text-primary-foreground shadow-elegant lg:-mt-4"
                     : "bg-card-grad text-foreground border border-border shadow-soft hover:shadow-card-brand"
-                }`}
+                  }`}
               >
                 {m.highlight && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-secondary text-secondary-foreground px-4 py-1 rounded-full text-xs font-bold tracking-wider uppercase shadow-glow animate-pulse-soft">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-secondary text-secondary-foreground px-4 py-1 rounded-full text-xs font-bold tracking-wider uppercase shadow-glow ">
                     Most Popular
                   </div>
                 )}
 
                 <div className="flex items-center gap-3 mb-2">
                   <div
-                    className={`w-12 h-12 rounded-2xl flex items-center justify-center ${
-                      m.highlight ? "bg-secondary/20" : "bg-gradient-brand"
-                    }`}
+                    className={`w-12 h-12 rounded-2xl flex items-center justify-center ${m.highlight ? "bg-secondary/20" : "bg-[#1daf83]"
+                      }`}
                   >
                     <m.icon className={`w-6 h-6 ${m.highlight ? "text-secondary" : "text-primary-foreground"}`} />
                   </div>
@@ -163,15 +161,13 @@ const Models = () => {
                     Total Investment · {m.area}
                   </div>
                   <div
-                    className={`grid grid-cols-2 gap-3 mt-4 pt-4 border-t ${
-                      m.highlight ? "border-white/20" : "border-border"
-                    }`}
+                    className={`grid grid-cols-2 gap-3 mt-4 pt-4 border-t ${m.highlight ? "border-white/20" : "border-border"
+                      }`}
                   >
                     <div>
                       <div
-                        className={`text-[10px] uppercase tracking-wider ${
-                          m.highlight ? "text-primary-foreground/60" : "text-muted-foreground"
-                        }`}
+                        className={`text-[10px] uppercase tracking-wider ${m.highlight ? "text-primary-foreground/60" : "text-muted-foreground"
+                          }`}
                       >
                         Net Profit / mo
                       </div>
@@ -179,9 +175,8 @@ const Models = () => {
                     </div>
                     <div>
                       <div
-                        className={`text-[10px] uppercase tracking-wider ${
-                          m.highlight ? "text-primary-foreground/60" : "text-muted-foreground"
-                        }`}
+                        className={`text-[10px] uppercase tracking-wider ${m.highlight ? "text-primary-foreground/60" : "text-muted-foreground"
+                          }`}
                       >
                         ROI Period
                       </div>
@@ -190,9 +185,8 @@ const Models = () => {
                   </div>
 
                   <div
-                    className={`grid grid-cols-3 gap-2 mt-3 pt-3 border-t text-[10px] uppercase tracking-wider ${
-                      m.highlight ? "border-white/20 text-primary-foreground/60" : "border-border text-muted-foreground"
-                    }`}
+                    className={`grid grid-cols-3 gap-2 mt-3 pt-3 border-t text-[10px] uppercase tracking-wider ${m.highlight ? "border-white/20 text-primary-foreground/60" : "border-border text-muted-foreground"
+                      }`}
                   >
                     <div>
                       <div>Sales/mo</div>
@@ -246,7 +240,7 @@ const Models = () => {
             {chooseGuide.map((c, i) => (
               <Reveal key={i} delay={i * 0.1}>
                 <div className="group h-full bg-card-grad rounded-2xl p-6 border border-border hover:border-secondary/40 hover:-translate-y-1 transition-spring shadow-soft">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-brand flex items-center justify-center mb-4 group-hover:rotate-6 transition-spring shadow-soft">
+                  <div className="w-12 h-12 rounded-xl bg-[#1daf83] flex items-center justify-center mb-4 group-hover:rotate-6 transition-spring shadow-soft">
                     <c.icon className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <h4 className="font-display font-bold text-lg text-primary mb-3">{c.title}</h4>

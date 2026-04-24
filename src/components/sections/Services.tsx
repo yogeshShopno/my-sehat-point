@@ -43,7 +43,7 @@ const services = [
 const Services = () => {
   return (
     <section id="services" className="py-20 md:py-28 bg-mint-grad relative overflow-hidden">
-      <div className="absolute top-10 right-[-4rem] w-48 md:w-64 opacity-30 md:opacity-60 rotate-12 pointer-events-none animate-float">
+      <div className="absolute top-10 right-[-4rem] w-48 md:w-64 opacity-30 md:opacity-60 rotate-5 pointer-events-none ">
         <img src={vaccinesImg} alt="" className="w-full h-auto" loading="lazy" />
       </div>
 

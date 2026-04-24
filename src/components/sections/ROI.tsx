@@ -52,11 +52,10 @@ const ROI = () => {
               ].map((c, i) => (
                 <div
                   key={i}
-                  className={`flex items-center justify-between gap-4 px-5 py-3 rounded-xl border ${
-                    c.muted
+                  className={`flex items-center justify-between gap-4 px-5 py-3 rounded-xl border ${c.muted
                       ? "border-white/10 bg-white/[0.03] text-primary-foreground/60"
                       : "border-secondary/40 bg-secondary/15 text-primary-foreground"
-                  }`}
+                    }`}
                 >
                   <div className="flex items-center gap-3">
                     <c.icon className={`w-5 h-5 ${c.muted ? "text-primary-foreground/50" : "text-secondary"}`} />
@@ -78,7 +77,7 @@ const ROI = () => {
                   loading="lazy"
                   width={1280}
                   height={800}
-                  className="w-full h-auto object-cover"
+                  className="w-full h-[450px] object-contain bg-primary/10"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4 bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/20">

@@ -48,7 +48,7 @@ const WhyUs = () => {
                     {String(i + 1).padStart(2, "0")}
                   </div>
                   <div className="relative flex gap-4">
-                    <div className="w-11 h-11 rounded-xl bg-gradient-brand flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:rotate-6 transition-spring shadow-soft">
+                    <div className="w-11 h-11 rounded-xl bg-[#1daf83] flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:rotate-6 transition-spring shadow-soft">
                       <u.icon className="w-5 h-5 text-primary-foreground" />
                     </div>
                     <div>
