@@ -1,6 +1,6 @@
 import { Eye, Target, Award, Users, Building2, Sparkles } from "lucide-react";
 import pharmacyCounter from "@/assets/illu-pharmacy-counter.jpg";
-import stethoscopeImg from "@/assets/illu-stethoscope-syringes.jpg";
+import stethoscopeImg from "@/assets/illu-stethoscope-syringes1.jpg";
 import { useReveal } from "@/hooks/use-reveal";
 
 const About = () => {
@@ -34,12 +34,12 @@ const About = () => {
               </div>
 
               {/* Floating stethoscope */}
-              <div className="hidden md:block absolute -top-8 -left-8 w-28 h-28 rounded-2xl bg-white shadow-elegant p-2 animate-float overflow-hidden">
+              <div className="hidden md:block absolute -top-8 -left-8 w-28 h-28 rounded-2xl bg-white shadow-elegant p-2  overflow-hidden">
                 <img src={stethoscopeImg} alt="" className="w-full h-full object-cover" />
               </div>
 
               {/* Stat badge */}
-              <div className="absolute -bottom-6 right-4 md:right-8 bg-hero text-primary-foreground rounded-2xl p-4 shadow-elegant animate-float" style={{ animationDelay: "1s" }}>
+              <div className="absolute -bottom-6 right-4 md:right-8 bg-hero text-primary-foreground rounded-2xl p-4 shadow-elegant " style={{ animationDelay: "1s" }}>
                 <div className="text-[10px] uppercase tracking-wider text-secondary font-bold">Trusted by</div>
                 <div className="font-display font-extrabold text-2xl">Thousands</div>
                 <div className="text-xs text-white/70">across India</div>
@@ -76,7 +76,7 @@ const About = () => {
               <div className="group relative bg-card-grad rounded-2xl p-5 border border-border hover:border-secondary/40 hover:shadow-card-brand transition-spring overflow-hidden">
                 <div className="absolute -top-8 -right-8 w-24 h-24 bg-secondary/10 rounded-full blur-2xl group-hover:scale-150 transition-spring" />
                 <div className="relative">
-                  <div className="w-11 h-11 rounded-xl bg-gradient-brand flex items-center justify-center mb-3 shadow-soft group-hover:rotate-6 transition-spring">
+                  <div className="w-11 h-11 rounded-xl bg-[#1daf83] flex items-center justify-center mb-3 shadow-soft group-hover:rotate-6 transition-spring">
                     <Eye className="w-5 h-5 text-white" />
                   </div>
                   <h3 className="font-display font-bold text-lg text-primary mb-1">Our Vision</h3>
@@ -89,8 +89,8 @@ const About = () => {
               <div className="group relative bg-hero text-primary-foreground rounded-2xl p-5 shadow-elegant overflow-hidden">
                 <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-secondary/30 rounded-full blur-2xl group-hover:scale-150 transition-spring" />
                 <div className="relative">
-                  <div className="w-11 h-11 rounded-xl bg-white/15 backdrop-blur flex items-center justify-center mb-3 group-hover:rotate-6 transition-spring">
-                    <Target className="w-5 h-5 text-secondary" />
+                  <div className="w-11 h-11 rounded-xl bg-[#1daf83] text-white flex items-center justify-center mb-3 group-hover:rotate-6 transition-spring">
+                    <Target className="w-5 h-5 text-white" />
                   </div>
                   <h3 className="font-display font-bold text-lg mb-1">Our Mission</h3>
                   <p className="text-sm text-white/85 leading-relaxed">

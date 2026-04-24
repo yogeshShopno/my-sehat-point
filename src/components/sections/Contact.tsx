@@ -25,7 +25,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 md:py-28 bg-background relative overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-secondary/5 blur-3xl rounded-full -z-0" />
-      <div className="container relative">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center max-w-2xl mx-auto mb-14">
           <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold tracking-wider uppercase mb-4">
             Limited Slots Available
@@ -42,8 +42,8 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-5 gap-8 lg:gap-12 items-start">
           {/* Contact info */}
-          <div className="lg:col-span-2 space-y-4">
-            <ContactCard icon={Phone} label="Call Us" value="+91 77788 77563" href="tel:+917778877563" highlight />
+          <div className="lg:col-span-2 flex flex-col gap-4">
+            <ContactCard icon={Phone} label="Call Us" value="+91 77788 77563" href="tel:+917778877563" />
             <ContactCard icon={Mail} label="Email" value="franchise@mysehatpoint.com" href="mailto:franchise@mysehatpoint.com" />
             <ContactCard icon={Globe} label="Website" value="www.mysehatpoint.com" href="https://www.mysehatpoint.com" />
             <ContactCard icon={MapPin} label="Operating Across" value="India · Pan-India Expansion" />
@@ -120,16 +120,14 @@ const ContactCard = ({
 }) => {
   const inner = (
     <div
-      className={`group flex items-center gap-4 p-5 rounded-2xl border transition-spring hover:-translate-y-0.5 ${
-        highlight
-          ? "bg-hero text-primary-foreground border-transparent shadow-card-brand"
-          : "bg-card border-border hover:border-secondary/40 hover:shadow-soft"
-      }`}
+      className={`group flex items-center gap-4 p-5 rounded-2xl border transition-spring hover:-translate-y-0.5 ${highlight
+        ? "bg-hero text-primary-foreground border-transparent shadow-card-brand"
+        : "bg-card border-border hover:border-secondary/40 hover:shadow-soft"
+        }`}
     >
       <div
-        className={`w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 ${
-          highlight ? "bg-white/10" : "bg-gradient-brand"
-        }`}
+        className={`w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 ${highlight ? "bg-white/10" : "bg-[#1daf83]"
+          }`}
       >
         <Icon className={`w-6 h-6 ${highlight ? "text-secondary" : "text-white"}`} />
       </div>
