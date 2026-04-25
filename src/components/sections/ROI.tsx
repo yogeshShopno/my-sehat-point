@@ -1,5 +1,5 @@
 import { TrendingUp, IndianRupee, Calendar, BarChart3, ShoppingBag, Plane, Pill } from "lucide-react";
-import storefront from "@/assets/storefront.jpg";
+import storefront from "@/assets/storefront.jfif";
 import coatStetho from "@/assets/illu-coat-stethoscope1.jpg";
 import Reveal from "@/components/Reveal";
 
